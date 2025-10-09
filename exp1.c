@@ -3,3 +3,7 @@ void main()
 {
   print("HEllo");
 }
+sort()
+{}
+search()
+{}
