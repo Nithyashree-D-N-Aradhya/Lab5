@@ -1,0 +1,65 @@
+# Essential Git Commands and Their Uses
+
+## Branch Management
+- `git branch <branch-name>`  
+  Create a new branch.
+- `git checkout <branch-name>`  
+  Switch to an existing branch.
+- `git checkout -b <branch-name>`  
+  Create and switch to a new branch.
+- `git branch`  
+  List all branches.
+- `git branch -d <branch-name>`  
+  Delete a branch.
+
+## Remote Repository Setup
+- `git remote add origin <remote-url>`  
+  Add a remote repository named "origin".
+- `git push -u origin master`  
+  Push your local master branch to remote for the first time.
+
+## Merging and Rebasing
+- `git merge <source-branch>`  
+  Merge the specified branch into your current branch.
+- `git rebase <base-branch>`  
+  Rebase your current branch onto another branch.
+
+## Stashing Changes
+- `git stash`  
+  Stash your current changes.
+- `git stash list`  
+  List all stashed changes.
+- `git stash apply`  
+  Apply the latest stash.
+- `git stash apply stash@{n}`  
+  Apply a specific stash.
+
+## Fetching Latest Changes
+- `git fetch origin`  
+  Fetch latest changes from remote repository.
+- `git pull origin <branch-name>`  
+  Fetch and merge changes from remote into your branch.
+
+## Tagging Commits
+- `git tag <tag-name> <commit-id>`  
+  Create a lightweight tag for a specific commit.
+
+## Cherry-picking Commits
+- `git cherry-pick <start-commit-id>^..<end-commit-id>`  
+  Cherry-pick a range of commits (inclusive) from source to current branch.
+
+## Analysing and Changing History
+- `git rebase -i <commit-id>`  
+  Start interactive rebase for editing history (use commit before range).
+
+## Listing Commits by Author and Date
+- `git log --author="xyz" --since="YYYY-MM-DD" --until="YYYY-MM-DD"`  
+  List all commits by author "xyz" between two dates.
+
+## Displaying Last N Commits
+- `git log -n <number>`  
+  Show last n commits.
+
+## Undoing Changes from a Commit
+- `git revert <commit-id>`  
+  Undo changes introduced by a specific commit (creates a new commit).
